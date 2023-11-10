@@ -34,8 +34,12 @@ loop do
             print "Digite segundo numero: "
             num2 = gets.chomp.to_i
             puts "Resultado é #{num1 / num2}"
-        else
+        when 0
             puts "Finalizando..."
+            break if opcao == 0
+        else
+            puts "Erro: Opção invalida."
+            opcao = 0
             break if opcao == 0
     end
 end
